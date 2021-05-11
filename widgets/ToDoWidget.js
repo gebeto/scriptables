@@ -114,7 +114,25 @@ async function getTasks(token) {
   return tasks;
 }
 
-const tasks = await getTasks(args.queryParameters.token || 'TOKEN');
+
+async function getToken() {
+  const key = 'TODOIST_TOKEN';
+  if (!Keychain.contains(key) || !Keychain.get(key)) {
+    const keyAlert = new Alert();
+    keyAlert.title = "Todoist Access Key"
+    const saveAction = keyAlert.addAction("Save") || 0;
+    keyAlert.addCancelAction("Cancel");
+    keyAlert.addTextField("API Access Token");
+    await keyAlert.present();
+    const value = keyAlert.textFieldValue(saveAction);
+    Keychain.set(key, value);
+  }
+  return Keychain.get(key);
+}
+
+const token = await getToken();
+console.log(token);
+const tasks = await getTasks(args.queryParameters.token || token);
 const nextRunDate = new Date();
 nextRunDate.setDate(nextRunDate.getDate() + 1);
 nextRunDate.setHours(0);
