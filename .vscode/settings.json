@@ -1,0 +1,6 @@
+{
+    "files.exclude": {
+        "sources/.Trash": true,
+        "sources/cache": true
+    }
+}

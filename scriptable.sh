@@ -14,13 +14,17 @@ function import() {
     ln ~/Library/Mobile\ Documents/iCloud\~dk\~simonbs\~Scriptable/Documents/"$1.js" "widgets/$1.js"
 }
 
+function importModule() {
+    ln ~/Library/Mobile\ Documents/iCloud\~dk\~simonbs\~Scriptable/Documents/modules/"$1.js" "modules/$1.js"
+}
+
 
 function list() {
     ls ~/Library/Mobile\ Documents/iCloud\~dk\~simonbs\~Scriptable/Documents
 }
 
 
-commands=(list import)
+commands=(list import, importModule)
 
 
 if [[ $# -gt 0 ]] && [[ "${commands[@]}" =~ "$1" ]]; then
