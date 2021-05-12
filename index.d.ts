@@ -98,6 +98,36 @@ class LinearGradient {
 }
 
 
+class Device {
+    static name(): string;
+    static systemName(): string;
+    static systemVersion(): string;
+    static model(): string;
+    static isPhone(): bool;
+    static isPad(): bool;
+    static screenSize(): Size;
+    static screenResolution(): Size;
+    static screenScale(): number;
+    static screenBrightness(): number;
+    static isInPortrait(): bool;
+    static isInPortraitUpsideDown(): bool;
+    static isInLandscapeLeft(): bool;
+    static isInLandscapeRight(): bool;
+    static isFaceUp(): bool;
+    static isFaceDown(): bool;
+    static batteryLevel(): number;
+    static isDischarging(): bool;
+    static isCharging(): bool;
+    static isFullyCharged(): bool;
+    static preferredLanguages(): [string];
+    static locale(): string;
+    static language(): string;
+    static isUsingDarkAppearance(): bool;
+    static volume(): number;
+    static setScreenBrightness(percentage: number): void;
+}
+
+
 declare namespace args {
     const length: number;
     const all: any[];
@@ -196,6 +226,22 @@ class Keychain {
     static set(key: string, value: string): void;
     static get(key: string): string;
     static remove(key: string): void;
+}
+
+
+class SFSymbol {
+    image: Image;
+    static named(symbolName: string): SFSymbol;
+    applyFont(font: Font): void;
+    applyUltraLightWeight(): void;
+    applyThinWeight(): void;
+    applyLightWeight(): void;
+    applyRegularWeight(): void;
+    applyMediumWeight(): void;
+    applySemiboldWeight(): void;
+    applyBoldWeight(): void;
+    applyHeavyWeight(): void;
+    applyBlackWeight(): void;
 }
 
 
