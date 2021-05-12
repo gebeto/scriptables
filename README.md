@@ -3,6 +3,15 @@
 Scriptable app projects
 
 
-## Create link for editing with VSCode
+## Initialize your local env
 
-ln ~/Library/Mobile\ Documents/iCloud\~dk\~simonbs\~Scriptable/Documents/ScriptName.js ScriptName.js
+```sh
+$ ./scriptable.sh init
+```
+
+
+## Import your script for development
+
+```sh
+$ ./scriptable.sh import ScriptName
+```
