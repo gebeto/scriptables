@@ -20,12 +20,17 @@ function import() {
 }
 
 
+function importModule() {
+	ln ~/Library/Mobile\ Documents/iCloud~dk~simonbs~Scriptable/Documents/modules/"$1.js" "modules/$1.js"
+}
+
+
 function list() {
 	ls ~/Library/Mobile\ Documents/iCloud~dk~simonbs~Scriptable/Documents/
 }
 
 
-commands=(init list import)
+commands=(init list import, importModule)
 
 
 if [[ $# -gt 0 ]] && [[ "${commands[@]}" =~ "$1" ]]; then
