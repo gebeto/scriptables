@@ -37,3 +37,7 @@ $ ./scriptable.sh init
 ```sh
 $ ./scriptable.sh import ScriptName
 ```
+
+
+## Thanks
+ - [schl3ck](https://github.com/schl3ck) for Scriptable types definition: [ios-scriptable-types](https://github.com/schl3ck/ios-scriptable-types)
