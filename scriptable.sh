@@ -10,6 +10,11 @@ function show_commands() {
 }
 
 
+function upgradeTypes() {
+	curl https://raw.githubusercontent.com/schl3ck/ios-scriptable-types/master/dist/scriptable.d.ts -o index.d.ts
+}
+
+
 function init() {
 	ln -s ~/Library/Mobile\ Documents/iCloud~dk~simonbs~Scriptable/Documents/ sources
 }
@@ -30,7 +35,7 @@ function list() {
 }
 
 
-commands=(init list import, importModule)
+commands=(init list import importModule upgradeTypes)
 
 
 if [[ $# -gt 0 ]] && [[ "${commands[@]}" =~ "$1" ]]; then
