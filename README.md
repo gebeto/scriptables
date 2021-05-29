@@ -1,7 +1,5 @@
 # Scriptable Development Environment
 
-Scriptable app projects.
-
 This project includes
  - Scriptable types generated from documentation page
  - **RUN** hotkey `CMD + SHIFT + B`, it will run current script in Scriptable
