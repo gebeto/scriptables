@@ -1,7 +1,7 @@
 // Variables used by Scriptable.
 // These must be at the very top of the file. Do not edit.
 // icon-color: light-brown; icon-glyph: magic;
-
+///<reference path="../index.d.ts" />
 
 const ww = new ListWidget()
 ww.setPadding(0,0,0,0);
