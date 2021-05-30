@@ -1,6 +1,8 @@
 // Variables used by Scriptable.
 // These must be at the very top of the file. Do not edit.
 // icon-color: red; icon-glyph: download;
+///<reference path="../index.d.ts" />
+
 const data_ = [[1], [1.9], [4], [2.8], [5], [2.4]];
 const crypto = args.widgetParameter || "btc"
 const req = new Request("https://api.kuna.io/v3/book/"+crypto+"uah")
