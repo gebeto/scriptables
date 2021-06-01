@@ -2,7 +2,7 @@
 
 This project includes
  - Scriptable types generated from documentation page
- - **RUN** hotkey `CMD + SHIFT + B`, it will run current script in Scriptable
+ - **RUN SCRIPT** hotkey: <kbd>CMD</kbd> + <kbd>SHIFT</kbd> + <kbd>B</kbd>, it will run current script in Scriptable
  - Folder with all your Scriptable apps
 
 
