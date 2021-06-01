@@ -3,7 +3,7 @@
 
 This project includes
  - Scriptable types generated from documentation page
- - **RUN SCRIPT** hotkey: <kbd>CMD</kbd> + <kbd>SHIFT</kbd> + <kbd>B</kbd>, it will run current script in Scriptable
+ - **RUN SCRIPT** hotkey: <kbd>⌘</kbd> + <kbd>SHIFT</kbd> + <kbd>B</kbd>, it will run current script in Scriptable
     > Script file name should not contain spaces
  - Folder with all your Scriptable apps
 
