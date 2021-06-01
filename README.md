@@ -37,8 +37,14 @@ $ ./scriptable.sh init
 
 ## Import your script for git integration
 
+ > IMPORTANT: Script name should not contain any **spaces**, because RUN hotkey will now working
+
 ```sh
 $ ./scriptable.sh import ScriptName
+# or
+$ ./scriptable.sh import Script-Name
+# or
+$ ./scriptable.sh import Script_Name
 ```
 
 
