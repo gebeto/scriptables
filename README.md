@@ -30,6 +30,8 @@ How to start to develop scriptable apps with VSCode:
 
 ## Initialize your local env
 
+Tou can use BASH script or [VSCode extension](https://marketplace.visualstudio.com/items?itemName=gebeto.vscode-scriptable) for it
+
 ```sh
 $ ./scriptable.sh init
 ```
