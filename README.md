@@ -5,6 +5,7 @@ This project includes
  - **RUN** hotkey `CMD + SHIFT + B`, it will run current script in Scriptable
  - Folder with all your Scriptable apps
 
+
 ## Getting started
 
 How to start to develop scriptable apps with VSCode:
@@ -22,7 +23,8 @@ How to start to develop scriptable apps with VSCode:
   ```
 6. Done! Open VSCode in the repo(`code .`) and start to build your apps fast and easy!
 
-Folder `sources` is your scriptable folder link, you can edit files there and it will be updated in scriptable app.
+ > Folder `sources` is your scriptable folder link, you can edit files there and it will be updated in scriptable app.
+
 
 ## Initialize your local env
 
@@ -30,10 +32,25 @@ Folder `sources` is your scriptable folder link, you can edit files there and it
 $ ./scriptable.sh init
 ```
 
+
 ## Import your script for git integration
 
 ```sh
 $ ./scriptable.sh import ScriptName
+```
+
+
+## ERRORS
+If scriptable typing are not loaded for you, need to add `///<reference path="../index.d.ts" />` on top of the your script (like shown below).
+Where **path** is a relative path to the `index.d.ts` file.
+
+```diff
+// Variables used by Scriptable.
+// These must be at the very top of the file. Do not edit.
+// icon-color: green; icon-glyph: magic;
++ ///<reference path="../index.d.ts" />
+
+...
 ```
 
 
