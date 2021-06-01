@@ -1,5 +1,6 @@
 # Scriptable Development Environment
 
+
 This project includes
  - Scriptable types generated from documentation page
  - **RUN SCRIPT** hotkey: <kbd>CMD</kbd> + <kbd>SHIFT</kbd> + <kbd>B</kbd>, it will run current script in Scriptable
@@ -39,6 +40,13 @@ $ ./scriptable.sh init
 ```sh
 $ ./scriptable.sh import ScriptName
 ```
+
+
+## Relative projects
+ - [https://github.com/gebeto/scriptable-vscode](https://github.com/gebeto/scriptable-vscode)
+    > plugin will replace `scriptable.sh` when it will done(work in progress).
+ - [https://github.com/schl3ck/ios-scriptable-types](https://github.com/schl3ck/ios-scriptable-types)
+    > Scriptable Typescript typings
 
 
 ## ERRORS
