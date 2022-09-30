@@ -12,7 +12,7 @@ This project includes
 
 How to start to develop scriptable apps with VSCode:
 
-1. Download [Scirptable for MacOS](https://scriptable.app/mac-beta/)
+1. Download [Scriptable for MacOS](https://scriptable.app/mac-beta/)
 2. Enable iCloud sync for Scriptable
 3. Download [VSCode](https://code.visualstudio.com/)
 4. Clone this repository
