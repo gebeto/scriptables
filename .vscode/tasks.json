@@ -6,7 +6,7 @@
     {
       "label": "Run",
       "type": "shell",
-      "command": "open scriptable:///run/${fileBasenameNoExtension}",
+      "command": "open \"scriptable:///run/$(echo ${fileBasenameNoExtension} | sed 's/ /%20/g')\"",
       "group": {
         "kind": "build",
         "isDefault": true
